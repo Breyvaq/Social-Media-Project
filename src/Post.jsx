@@ -9,13 +9,13 @@ function Post({ title, content }) { // Destructure title and content from props
   }
   
   return (
-    <div>
-      <h2>{title}</h2> {/* Display the title */}
-      <h4>{content}</h4> {/* Display the content */}
-      <p>Likes: {likes}</p>
-      <button onClick={handleLike}>Like</button>
-      <p>Comments:</p>
-      <Comment content="This is a test comment!" />
+    <div className="post-container">
+      <h2 className="post-title">{title}</h2>
+      <p className="post-content">{content}</p>
+      <div className="likes-section">
+        <span className="likes-count">Likes: {likes}</span>
+        <button onClick={handleLike} className="like-button">Like</button>
+      </div>
     </div>
   );
 }

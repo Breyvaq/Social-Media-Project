@@ -19,15 +19,11 @@ function App(){
   };
 
   return(
-    <div>
+    <div className="posts-wrapper"> 
       <h1>Fakebook!</h1>
-      
       <CreatePostForm addPost={addPost} />
-      <Feed posts={posts} /> 
-      
-      
-    
+      <Feed posts={posts} />
     </div>
-  )
+  );
 }
 export default App
