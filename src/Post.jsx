@@ -10,8 +10,8 @@ function Post({ title, content }) {
     setLikes(likes + 1);
   }
 
-  function handleCommentSubmit(e) {
-    e.preventDefault();
+  function handleCommentSubmit(event) {
+    event.preventDefault();
     if (!commentInput.trim()) return; // Prevent adding empty comments
     setComments([...comments, commentInput]);
     setCommentInput(''); // Reset input field after submitting
@@ -30,7 +30,7 @@ function Post({ title, content }) {
         <input
           type="text"
           value={commentInput}
-          onChange={(e) => setCommentInput(e.target.value)}
+          onChange={(event) => setCommentInput(event.target.value)}
           placeholder="Add a comment..."
         />
         <button type="submit">Comment</button>
