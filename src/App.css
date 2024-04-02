@@ -87,3 +87,14 @@
   color: #333;
   font-size: 16px;
 }
+
+.comment {
+  background-color: #f0f2f5; 
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #000; 
+}
+
+
+
